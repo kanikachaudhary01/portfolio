@@ -1,21 +1,21 @@
-import { Circle } from "lucide-react"
+import TechProp from "./TechProp";
+
+const techStackData = [
+  { heading: "TailwindCSS", color: "#38BDF8" },
+  { heading: "JavaScript", color: "#F7DF1E" },
+  { heading: "TypeScript", color: "#3178C6" },
+  { heading: "ReactJS", color: "#61DAFB" },
+  { heading: "HTML", color: "#E34F26" },
+];
 
 function TechStack() {
   return (
-    <>
-    <div className="rounded-2xl h-[30rem] w-[30rem] shadow-lg m-5">
-     <div className=" text-4xl shadow-2xl mx-7">
-     
-      <h1  className="  rounded-xl h-20 bg-amber-100"> < Circle/>  React js</h1>
-      <h1>HTML CSS</h1>
-      <h1>Tailwind CSS</h1>
-      <h1>Java Script</h1>
-      <h1>TypeScript</h1>
-      </div>
-       
+    <div className="rounded-2xl h-[30rem] w-[28rem] p-5  m-5 text-[2rem] flex flex-col items-center justify-center shadow-[0px_0px_5px_5px]  shadow-[#57C785] hover:shadow-[0px_0px_8px_8px] transition duration-300">
+      {techStackData.map((tech, index) => (
+        <TechProp key={index} heading={tech.heading} color={tech.color} />
+      ))}
     </div>
-    </>
-  )
+  );
 }
 
-export default TechStack
+export default TechStack;
