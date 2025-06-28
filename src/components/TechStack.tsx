@@ -10,7 +10,7 @@ const techStackData = [
 
 function TechStack() {
   return (
-    <div className="rounded-2xl h-[30rem] w-[28rem] p-5  m-5 text-[2rem] flex flex-col items-center justify-center shadow-[0px_0px_5px_5px]  shadow-[#57C785] hover:shadow-[0px_0px_8px_8px] transition duration-300">
+    <div className="rounded-2xl h-[30rem] w-[28rem] p-5  m-5 text-[2rem] flex flex-col items-center justify-center shadow-2xl">
       {techStackData.map((tech, index) => (
         <TechProp key={index} heading={tech.heading} color={tech.color} />
       ))}

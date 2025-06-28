@@ -3,7 +3,7 @@ import dino from "../assets/dino.png";
 
 function Intro() {
     return (
-        <div className="rounded-2xl h-[30rem] w-[50rem] m-5 shadow-[0px_0px_5px_5px]  shadow-[#57C785] flex flex-1/2 hover:shadow-[0px_0px_8px_8px] transition duration-300">
+        <div className="rounded-2xl h-[30rem] w-[50rem] m-5    flex flex-1/2 shadow-2xl">
             <div className=" mx-10 my-10 flex flex-col mt-40 gap-5 ">
                 {InntroMap.map((intro, index) => (
                     <a

@@ -15,7 +15,7 @@ function TechProp({ heading, color }: TechPropProps) {
         (e.currentTarget as HTMLDivElement).style.boxShadow = `0px 0px 5px 5px transparent`;
       }}
     >
-      <div className="uppercase font-semibold">{heading}</div>
+      <div className="text-4xl">{heading}</div>
     </div>
   );
 }
